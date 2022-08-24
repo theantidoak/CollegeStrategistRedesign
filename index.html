@@ -434,12 +434,28 @@
                         <option value="">(major not specified)</option><option value="anthropology">anthropology</option><option value="architecture">architecture</option><option value="art">art</option><option value="biology">biology</option><option value="business">business</option><option value="chemistry">chemistry</option><option value="communication">communication</option><option value="computer science">computer science</option><option value="criminal justice">criminal justice</option><option value="earth sciences">earth sciences</option><option value="economics">economics</option><option value="education">education</option><option value="engineering">engineering</option><option value="health">health</option><option value="history">history</option><option value="law">law</option><option value="literature">literature</option><option value="math">math</option><option value="philosophy">philosophy</option><option value="physics">physics</option><option value="political science">political science</option><option value="psychology">psychology</option><option value="religious studies">religious studies</option><option value="sociology">sociology</option>
                     </select>
                 </div>
-                <div class="gender-div">
-                    <label for="gender">Gender:</label>
-                    <select name="gender"><option value="">(unspecified)</option><option value="m">Male</option><option value="f">Female</option>
-                    </select>
-                </div>
             </div>
+            <fieldset class="gender-div">
+                <legend for="gender">Gender</legend>
+                <!-- <select name="gender"><option value="">(unspecified)</option><option value="m">Male</option><option value="f">Female</option>
+                </select> -->
+                <div>
+                    <input type="radio" id="unspecified" name="gender" value="unspecified" checked>
+                    <label for="unspecified">(unspecified)</label>
+                </div>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="unspecified">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="unspecified">Female</label>
+                </div>
+                <div>
+                    <input type="radio" id="transgender" name="gender" value="transgender">
+                    <label for="unspecified">Transgender</label>
+                </div>
+            </fieldset>
             <button class="find-button">Find My Schools!</button>
         </form>
         <div class="form-results">
