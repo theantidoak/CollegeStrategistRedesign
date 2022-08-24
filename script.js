@@ -18,7 +18,7 @@ const displayScore = (function() {
     }
 
     function displayNotTaken() {
-        if (satSpan.textContent != 'Not Taken') {
+        if (satCheckbox && satSpan.textContent != 'Not Taken') {
             satSpan.textContent = 'Not Taken';
         } else {
             satSpan.textContent = satInput.value;
@@ -30,7 +30,7 @@ const displayScore = (function() {
     }
 
     function displayActNotTaken() {
-        if (actSpan.textContent != 'Not Taken') {
+        if (actCheckbox && actSpan.textContent != 'Not Taken') {
             actSpan.textContent = 'Not Taken';
         } else {
             actSpan.textContent = actInput.value;
