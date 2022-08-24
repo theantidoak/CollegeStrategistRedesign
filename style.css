@@ -374,6 +374,9 @@ input[type='radio']:checked {
     width: 15rem;
     height: 15rem;
     background-color: #e6f4fa;
+    color: var(--background-blue);
+    font-size: 1.25rem;
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     gap: 2rem;
