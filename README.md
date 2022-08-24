@@ -9,4 +9,4 @@ For the last section, I turned the grid into a carousel. Originally, it did not 
 
 The svg icons were taken from either feathericons.com or Google Icons, except for the select input svg icons, which I made. 
 
-
+The gender input are radio buttons restyled using svgs.
