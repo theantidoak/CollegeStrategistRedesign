@@ -15,6 +15,7 @@ const displayScore = (function() {
 
     function showSatScore() {
         satSpan.textContent = satInput.value;
+        satCheckbox.checked = true;
     }
 
     function displayNotTaken() {
@@ -27,6 +28,7 @@ const displayScore = (function() {
 
     function showActScore() {
         actSpan.textContent = actInput.value;
+        actCheckbox.checked = true;
     }
 
     function displayActNotTaken() {
