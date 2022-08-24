@@ -1,4 +1,43 @@
+const displayScore = (function() {
 
+    const satInput = document.querySelector('#sat');
+    const satSpan = document.querySelector('.sat-span');
+    const satCheckbox = document.querySelector('#sat-on')
+    const actInput = document.querySelector('#act');
+    const actSpan = document.querySelector('.act-span');
+    const actCheckbox = document.querySelector('#act-on');
+
+    satInput.addEventListener('input', showSatScore);
+    satCheckbox.addEventListener('change', displayNotTaken);
+    actInput.addEventListener('input', showActScore);
+    actCheckbox.addEventListener('change', displayActNotTaken);
+
+
+    function showSatScore() {
+        satSpan.textContent = satInput.value;
+    }
+
+    function displayNotTaken() {
+        if (satSpan.textContent != 'Not Taken') {
+            satSpan.textContent = 'Not Taken';
+        } else {
+            satSpan.textContent = satInput.value;
+        }
+    }
+
+    function showActScore() {
+        actSpan.textContent = actInput.value;
+    }
+
+    function displayActNotTaken() {
+        if (actSpan.textContent != 'Not Taken') {
+            actSpan.textContent = 'Not Taken';
+        } else {
+            actSpan.textContent = actInput.value;
+        }
+    }
+
+})();
 
 
 

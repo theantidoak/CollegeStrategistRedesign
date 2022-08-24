@@ -70,7 +70,7 @@ body {
 }
 
 #tool-reinforcement {
-    margin: 2rem 0;
+    margin: 2rem 0 .5rem;
     /* position: relative; */
     display: flex;
     justify-content: center;
@@ -99,13 +99,12 @@ body {
     justify-content: space-evenly;
     align-items: center;
     /* width: 100%; */
-    margin: 2rem 0;
     position: relative;
     z-index: 1;
     box-shadow: 0 0 transparent, 0 0 transparent, 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%);
     background-color: white;
     border-radius: 20px;
-    margin: .5rem var(--padding) 3rem;
+    margin: 2rem var(--padding) 3rem;
     padding: 2rem 1rem 5rem;
 }
 
@@ -158,10 +157,10 @@ body {
     margin-top: 1rem;
 }
 
-/* input[type='checkbox'] {
+input[type='checkbox'] {
     border: 2px solid blue;
     transform: scale(1.75);
-} */
+}
 
 .sat-span, .act-span {
     padding: .25rem .75rem;
@@ -428,10 +427,12 @@ input[type='radio']:checked {
     display: grid;
     text-align: center;
     width: 100%;
+    position: relative;
 }
 
 .target-schools, .safety-schools {
     margin-top: 3rem;
+    position: relative;
 }
 
 .reach-schools h1, .target-schools h1, .safety-schools h1 {
@@ -440,6 +441,21 @@ input[type='radio']:checked {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.forward-arrow {
+    position: absolute;
+    right: 0;
+    top: 2.5rem;
+    color: var(--logo-blue);
+    fill: var(--logo-blue);
+}
+
+.back-arrow {
+    position: absolute;
+    top: 2.5rem;
+    color: var(--logo-blue);
+    fill: var(--logo-blue);
 }
 
 .reach-schools h1 svg, .target-schools h1 svg, .safety-schools svg {
