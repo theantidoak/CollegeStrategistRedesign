@@ -247,6 +247,10 @@ input[type='radio'] {
     color: #0192c9;
 }
 
+input[type='radio']:hover {
+    transform: scale(1.05);
+}
+
 input[type='radio'] + label {
     font-size: 1.25rem;
     color: var(--logo-blue);
