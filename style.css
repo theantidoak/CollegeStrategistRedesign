@@ -338,6 +338,14 @@ input[type='radio']:checked {
     background: linear-gradient(90deg, rgba(247,93,51,1) 15%, rgba(245,112,99,1) 100%, rgba(255,134,44,1) 100%);
 }
 
+.find-button:hover {
+    transform: scale(1.1);
+}
+
+.find-button:active {
+    transform: scale(.9);
+}
+
 
 .form-results {
     padding: 3rem 0;
