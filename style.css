@@ -24,20 +24,30 @@ main {
 }
 
 .page-description {
-    padding: 2rem;
-    background-color: white;
-    box-shadow: 0 0 transparent, 0 0 transparent, 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%);
-    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 .page-description h1 {
     width: fit-content;
-    margin: 0 auto 2rem;
+    margin: 2rem auto 4rem;
     font-size: 3rem;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.first-descriptions {
+    width: 40%;
+    margin-right: 10%;
+    display: inline-block;
 }
 
 .page-description ul {
+    display: inline-block;
     list-style: none;
+    width: 50%;
+    margin: 0;
 }
 
 .page-description li {
@@ -47,22 +57,33 @@ main {
 
 .page-description li svg {
     margin-right: .75rem;
+    color: var(--logo-blue);
+}
+
+.page-description li span {
+    color: var(--logo-blue);
 }
 
 #tool-reinforcement {
     width: fit-content;
-    margin: 1rem auto;
-    font-weight: 700;
+    margin: 3rem auto 0;
+    padding-bottom: 2rem;
 }
 
 form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 60rem;
-    margin: 5rem auto 0;
+    gap: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
     position: relative;
     z-index: 1;
+    box-shadow: 0 0 transparent, 0 0 transparent, 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%);
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem;
 }
 
 /* .arrow1 {
@@ -86,16 +107,16 @@ form {
 } */
 
 .range-inputs {
-    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    justify-content: center;
     z-index: 1;
 }
 
 .range-inputs > * {
-    width: 18rem;
+    width: 12rem;
     color: var(--logo-blue);
     font-size: 1.25rem;
 }
@@ -128,7 +149,7 @@ form {
 }
 
 input[type='range'] {
-    width: 16rem;
+    width: 12rem;
     appearance: none;
     height: 1.5rem;
     background: #d3d3d3;
@@ -136,6 +157,7 @@ input[type='range'] {
     opacity: 0.7;
     cursor: pointer;
     border-radius: 10px;
+    margin: 0;
 }
   
 input[type='range']::-webkit-slider-thumb {
@@ -155,20 +177,38 @@ input[type='range']::-moz-range-thumb {
   }
 
 .select-inputs {
-    width: 50%;
+    padding-left: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
 }
 
 .select-inputs label {
+    position: relative;
     display: inline-block;
     font-size: 1.25rem;
-    width: 5rem;
-    padding-right: 1rem;
+    width: 4rem;
     color: var(--logo-blue);
+}
+
+#svg-major {
+    position:absolute;
+    top: -.75rem;
+    left: -3.5rem;
+    height: 3rem;
+    width: auto;
+    /* color: #f75d33; */
+}
+
+#svg-map {
+    position:absolute;
+    top: -.75rem;
+    left: -3.25rem;
+    height: 2.5rem;
+    width: auto;
+    /* color: #f75d33; */
 }
 
 .select-inputs select {
@@ -187,19 +227,17 @@ input[type='range']::-moz-range-thumb {
 
 fieldset {
     border: none;
-    margin-top: 2rem;
+    width: 15rem;
     display: flex;
-    flex-basis: 100%;
-    width: fit-content;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     text-align: center;
-    color: var(--logo-orange);
+    color: var(--logo-blue);
     font-size: 1.25rem;
 }
 
 fieldset div {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,6 +269,7 @@ input[type='radio']:checked + label {
 
 #unspecified {
     background-image: url(photos/unspecified.svg);
+    background-size: 2rem;
     
 }
 
@@ -250,7 +289,18 @@ input[type='radio']:checked + label {
 }
 
 .find-button {
-    margin: 3rem 0 1rem;
+    display: block;
+    width: 16rem;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    /* background-color: var(--logo-orange); */
+    box-shadow: 2.5px 2.5px 12px #511f11;
+    padding: 1rem;
+    /* background: linear-gradient(90deg, rgba(1,146,201,1) 2%, rgba(115,153,223,1) 51%, rgba(180,177,177,1) 99%); */
+    background: linear-gradient(90deg, rgba(247,93,51,1) 15%, rgba(245,112,99,1) 100%, rgba(255,134,44,1) 100%);
 }
 
 
@@ -265,6 +315,11 @@ input[type='radio']:checked + label {
     width: 16rem;
 }
 
+.reach-schools ul, .target-schools ul, .safety-schools ul {
+    list-style: none;
+    padding: 0;
+}
+
 .target-schools {
     display: grid;
     width: 16rem;
@@ -274,9 +329,6 @@ input[type='radio']:checked + label {
     display: grid;
     width: 16rem;
 }
-
-
-
 
 
 /* Navigation Bar & Footer (copy/paste from HomepageMock) */
