@@ -316,6 +316,20 @@ select:focus {
     width: 14rem;
     padding: 0;
     margin: 0;
+    position: relative;
+}
+
+.heart-svg {
+    position: absolute;
+    height: 1.5rem;
+    width: auto;
+    top: .5rem;
+    right: .5rem;
+    cursor: pointer;
+}
+
+.heart-svg:hover {
+    fill: #ff8361;
 }
 
 .form-results ul li:last-child {
