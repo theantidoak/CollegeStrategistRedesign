@@ -369,8 +369,10 @@
     <main>
         <div class="page-description">
             <h1>College Strategist</h1>
-            <img src="photos/strategist.jpg" alt="">
-            <cite>Image credit: Photo by Firmbee.com on Unsplash
+            <div class="top-images">
+                <img class='inkscape-made' src="photos/Screenshot 2022-09-12 at 11.51.07.png" alt="">
+                <img class='AI-logo' src="photos/Screenshot 2022-08-17 at 10.51.32.png" alt="Academic Influence logo">
+            </div>
             </cite>
             <div class="first-descriptions">
                 <p id="tool-description">This powerful tool helps you to think strategically about where you need to apply for college. All it requires are a few details about you.</p>
@@ -400,7 +402,7 @@
             </div>
         </div>
 
-        <h2>See Your Recommendations</h2>
+        <h2>Generate Recommendations</h2>
         <form>
             <div class="inputs">
                 <div class="sat-score under-input" id="sats">
@@ -426,11 +428,6 @@
                 </div>
                 <div class="state-div under-input">
                     <label for="state">
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" id="svg-map">
-                            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
-                            <line x1="8" y1="2" x2="8" y2="18"></line>
-                            <line x1="16" y1="6" x2="16" y2="22"></line>
-                        </svg> -->
                         State:</label>
                     <select name="state">
                         <option value="">(not specified)</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AS">American Samoa</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District Of Columbia</option><option value="FM">Federated States Of Micronesia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="GU">Guam</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MH">Marshall Islands</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="MP">Northern Mariana Islands</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PW">Palau</option><option value="PA">Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VI">Virgin Islands</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option>
@@ -438,9 +435,6 @@
                 </div>
                 <div class="major-div under-input">
                     <label for="state">
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" id="svg-major">
-                            <path d="M16.05 40q-1.2 0-2.1-.9-.9-.9-.9-2.1v-5h6.2v-6.35q-1.9.15-3.8-.525T12.05 23v-2.9h-2.5L3 13.55q1.8-1.7 4.3-2.775T12.4 9.7q1.5 0 3.425.475 1.925.475 3.425 1.525V8H42v26.75q0 2.2-1.525 3.725T36.75 40Zm6.2-8H34.5v2.75q0 1 .625 1.625T36.75 37q1 0 1.625-.625T39 34.75V11H22.25v2.85L34.3 25.9v2.15h-2.15l-6.3-6.3-.85 1q-.65.75-1.3 1.15-.65.4-1.45.75ZM10.9 17.1h4.15v4.45q.85.55 1.675.825.825.275 1.675.275 1.25 0 2.55-.675 1.3-.675 1.9-1.375l.85-1-3.45-3.45q-1.6-1.6-3.6-2.525-2-.925-4.25-.925-1.35 0-2.45.325T7.7 13.9ZM16.05 37H32.2q-.3-.3-.5-.825-.2-.525-.2-1.175H16.05Zm0 0v-2 2Z"/>
-                        </svg> -->
                         Major:</label>
                     <select name="major">
                         <option value="">(not specified)</option><option value="anthropology">anthropology</option><option value="architecture">architecture</option><option value="art">art</option><option value="biology">biology</option><option value="business">business</option><option value="chemistry">chemistry</option><option value="communication">communication</option><option value="computer science">computer science</option><option value="criminal justice">criminal justice</option><option value="earth sciences">earth sciences</option><option value="economics">economics</option><option value="education">education</option><option value="engineering">engineering</option><option value="health">health</option><option value="history">history</option><option value="law">law</option><option value="literature">literature</option><option value="math">math</option><option value="philosophy">philosophy</option><option value="physics">physics</option><option value="political science">political science</option><option value="psychology">psychology</option><option value="religious studies">religious studies</option><option value="sociology">sociology</option>
@@ -452,25 +446,6 @@
                         <option value="">(unspecified)</option><option value="m">Male</option><option value="f">Female</option>
                     </select>
                 </div>
-                <!-- <fieldset class="gender-div">
-                    <legend for="gender">Gender:</legend>
-                    <div>
-                        <input type="radio" id="unspecified" name="gender" value="unspecified" checked>
-                        <label for="unspecified">(unspecified)</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="unspecified">Male</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="unspecified">Female</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="transgender" name="gender" value="transgender">
-                        <label for="unspecified">Transgender</label>
-                    </div>
-                </fieldset> -->
                 <div class="select-inputs">
                     
                 </div>
@@ -484,55 +459,40 @@
         <div class="form-results">
             <h2>Your Schools</h2>
             <article class="reach-schools">
-                
-                <h1>Reach</h1>
-                <div class="cover">
-                    <ul>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/northeastern-university-ma">Northeastern University</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/new-york-university">New York University</a></li>
-                        <li><a href=""><img src="https://res.cloudinary.com/academicinfluence/image/upload/v1596724773/university-california-los-angeles-seal.png">University of California, Los Angeles</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/tulane-university">Tulane University</a></li>
-                        <li><a href=""><img src="https://res.cloudinary.com/academicinfluence/image/upload/v1596724850/uc-berkeley-seal.png">University of California, Berkeley</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/university-southern-california">University of Southern California</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/boston-university">Boston University</a></li>
-                    </ul>
-                </div>
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" class="back-arrow">
-                    <path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" class="forward-arrow">
-                    <path d="m24 40-2.1-2.15L34.25 25.5H8v-3h26.25L21.9 10.15 24 8l16 16Z"/> -->
-                </svg>
+                <input type="checkbox" class="school-inputs reach-input">
+                <ul>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/northeastern-university-ma">Northeastern University</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/new-york-university">New York University</a></li>
+                    <li><a href=""><img src="https://res.cloudinary.com/academicinfluence/image/upload/v1596724773/university-california-los-angeles-seal.png">University of California, Los Angeles</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/tulane-university">Tulane University</a></li>
+                    <li><a href=""><img src="https://res.cloudinary.com/academicinfluence/image/upload/v1596724850/uc-berkeley-seal.png">University of California, Berkeley</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/university-southern-california">University of Southern California</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/boston-university">Boston University</a></li>
+                </ul>
             </article>
             <article class="target-schools">
-                <h1>Target</h1>
-                <div class="cover">
-                    <ul>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/university-minnesota">University of Minnesota</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/pennsylvania-state-university">Pennsylvania State University</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/university-alabama">University of Alabama</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/ohio-state-university">Ohio State University</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/university-illinois-urbana-champaign">University of Illinois Urbana-Champaign</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/university-wisconsin-madison">University Wisconsin-Madison</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/baylor-university">Baylor University</a></li>
-                    </ul>
-                </div>
-                </svg>
+                <input type="checkbox" class="school-inputs target-input">
+                <ul>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/university-minnesota">University of Minnesota</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/pennsylvania-state-university">Pennsylvania State University</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/university-alabama">University of Alabama</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/ohio-state-university">Ohio State University</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/university-illinois-urbana-champaign">University of Illinois Urbana-Champaign</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/university-wisconsin-madison">University Wisconsin-Madison</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/baylor-university">Baylor University</a></li>
+                </ul>
             </article>
             <article class="safety-schools">
-                <h1>Safety</h1>
-                <div class="cover">
-                    <ul>
-                        <li><a href=""><img src="https://res.cloudinary.com/academicinfluence/image/upload/v1596725089/university-colorado-seal.png">University of Colorado Boulder</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/texas-am-university">Texas A&M University</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/miami-university">Miami University</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/montclair-state-university">Montclair State University</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/ohio-university">Ohio University</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/university-utah">University of Utah</a></li>
-                        <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/st-johns-university-ny">St. John's University</a></li>
-                    </ul>
-                </div>
-                </svg>
+                <input type="checkbox" class="school-inputs safety-input">
+                <ul>
+                    <li><a href=""><img src="https://res.cloudinary.com/academicinfluence/image/upload/v1596725089/university-colorado-seal.png">University of Colorado Boulder</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/texas-am-university">Texas A&M University</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/miami-university">Miami University</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/montclair-state-university">Montclair State University</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/ohio-university">Ohio University</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/university-utah">University of Utah</a></li>
+                    <li><a href=""><img src="https://storage.googleapis.com/www-static-academic-influence/school-logos/st-johns-university-ny">St. John's University</a></li>
+                </ul>
             </article>
         </div>
         
